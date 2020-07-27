@@ -1,3 +1,13 @@
 body {
     background-color: rgb(196, 210, 223);
 }
+
+.form-inline {
+    margin-left: 130%;
+}
+
+.Banner {
+    display: flex;
+    justify-content: center;
+    
+}
