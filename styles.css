@@ -9,5 +9,27 @@ body {
 .Banner {
     display: flex;
     justify-content: center;
+    margin-bottom: 70px;
     
+}
+
+#mensualidad {
+    display: flex;
+    margin-left: 100%;
+    
+}
+
+#busqueda {
+    display: flex;
+    margin:50px;
+}
+
+.btn btn-primary {
+
+}
+
+footer { 
+    display: flex;
+    justify-content: center;
+    margin-top: 220px;
 }
