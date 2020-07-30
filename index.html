@@ -50,7 +50,7 @@
                     <form class="form-inline">
                         <input class="form-control mr-sm-2" type="search" placeholder="Buscar contenido"
                             aria-label="Search">
-                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Buscar</button>
+                        <button class="btn btn-outline-info" type="submit">Buscar</button>
                     </form>
                 </article>
             </section>
@@ -149,7 +149,7 @@
                                                                     <article class="col-6">
                                                                         <div class="form-group">
                                                                             <label for="fecha-nac-propietario">Fecha de
-                                                                                nacimeinto (*)</label>
+                                                                                nacimiento (*)</label>
                                                                             <input type="date" class="form-control"
                                                                                 id="fecha-nac-propietario"
                                                                                 placeholder="Fecha de nacimiento del propietario"
@@ -166,63 +166,109 @@
                                                             </div>
                                                             <div class="card-body">
                                                                 <article class="row">
-                                                                    <article class="col-6"></article>
-                                                                    <article class="col-6"></article>
+                                                                    <article class="col-6">
+                                                                        <div class="form-group">
+                                                                            <label for="metros">Metros cuadrados
+                                                                                (*)</label>
+                                                                            <input type="number" class="form-control"
+                                                                                id="metros"
+                                                                                placeholder="Metros cuadrados"
+                                                                                required />
+                                                                        </div>
+                                                                    </article>
+                                                                    <article class="col-6">
+                                                                        <div class="form-check">
+                                                                            <h6>Tipo (*)</h6>
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="exampleRadios" id="exampleRadios1"
+                                                                                value="option1" checked>
+                                                                            <label class="form-check-label"
+                                                                                for="exampleRadios1">
+                                                                                Apartamento
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="exampleRadios" id="exampleRadios2"
+                                                                                value="option2">
+                                                                            <label class="form-check-label"
+                                                                                for="exampleRadios2">
+                                                                                Casa
+                                                                            </label>
+                                                                        </div>
+                                                                    </article>
                                                                 </article>
                                                                 <article class="row">
-                                                                    <article class="col-6"></article>
-                                                                    <article class="col-6"></article>
+                                                                    <article class="col-6">
+                                                                        <div class="form-group">
+                                                                            <label for="num-habitamtes">Numero de
+                                                                                habitantes
+                                                                                (*)</label>
+                                                                            <input type="number" class="form-control"
+                                                                                id="num-habitamtes"
+                                                                                placeholder="Numero de habitantes"
+                                                                                required />
+                                                                        </div>
+                                                                    </article>
+                                                                    <article class="col-6">
+                                                                        <div class="form-group">
+                                                                            <label for="fecha-mensualidad">Fecha de
+                                                                                mensualidad (*)</label>
+                                                                            <input type="date" class="form-control"
+                                                                                id="fecha-mensualidad"
+                                                                                placeholder="Fecha de mensualidad"
+                                                                                required />
+                                                                        </div>
+                                                                    </article>
                                                                 </article>
                                                             </div>
                                                         </div>
-                                                    </form>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary"
-                                                        data-dismiss="modal">Salir</button>
-                                                    <button type="button" class="btn btn-primary"
-                                                        id="btn-guardar-inmueble">Guardar</button>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-success"
+                                                                id="btn-guardar-inmueble">Guardar</button>
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-dismiss="modal">Salir</button>
+                                                            
+                                                        </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered" id="tbl-mensualidades">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">Nombre</th>
-                                                    <th scope="col">Edad</th>
-                                                    <th scope="col">Genero</th>
-                                                    <th scope="col">Total a pagar</th>
-                                                    <th scope="col">Fecha de mensualidad</th>
-                                                    <th scope="col">Acciones</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                            </tbody>
-                                        </table>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered" id="tbl-mensualidades">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Nombre</th>
+                                                        <th scope="col">Edad</th>
+                                                        <th scope="col">Genero</th>
+                                                        <th scope="col">Total a pagar</th>
+                                                        <th scope="col">Fecha de mensualidad</th>
+                                                        <th scope="col">Acciones</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="ver-estadistica" role="tabpanel"
-                            aria-labelledby="ver-estadistica-tab">
+                            <div class="tab-pane fade" id="ver-estadistica" role="tabpanel"
+                                aria-labelledby="ver-estadistica-tab">
 
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <footer>
-            <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/_9SgawMKmdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
             <div class="row">
                 <div class="col-12 text-center p-2">
-                    <p>Copyright© 2020 | Medellin - Antioquio, Colombia | <a href="https://github.com/devoscarmesa"><i
+                    <p>Copyright© 2020 | Medellin - Antioquia, Colombia | <a href="https://github.com/gitanndie"><i
                                 class="fab fa-github"></i></a> | <a href="#"><i class="fab fa-facebook"></i></a> | <a
                             href="#"><i class="fab fa-twitter"></i></a></p>
                 </div>
