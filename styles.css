@@ -13,15 +13,18 @@ body {
     
 }
 
-#mensualidad {
-    display: flex;
-    margin-left: 100%;
-    
-}
-
 #busqueda {
     display: flex;
     margin:50px;
+}
+
+.form {
+    display: flex;
+    margin: 50px;
+}
+
+.modal-dialog { 
+    max-width: 800px;
 }
 
 footer { 
