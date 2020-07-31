@@ -10,11 +10,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="imagenes/iconos/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imagenes/iconos/favicon-16x16.png">
     <link rel="manifest" href="imagenes/iconos/site.webmanifest">
-    <title>Conjunto Residencial</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <title>Conjunto Residencial</title>
 </head>
 
 <body>
@@ -41,7 +41,6 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Contactanos</a>
                                 </li>
-
                             </ul>
                         </div>
                     </nav>
@@ -50,7 +49,7 @@
                     <form class="form-inline">
                         <input class="form-control mr-sm-2" type="search" placeholder="Buscar contenido"
                             aria-label="Search">
-                        <button class="btn btn-outline-info" type="submit">Buscar</button>
+                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Buscar</button>
                     </form>
                 </article>
             </section>
@@ -69,7 +68,8 @@
                     <ul class="nav nav-tabs card-header-tabs">
                         <li class="nav-item">
                             <a class="nav-link active" data-toggle="tab" href="#crear-mensualidad"
-                                id="crear-mensualidad-tab">Crear Mensualidad</a>
+                                id="crear-mensualidad-tab">Crear
+                                Mensualidad</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#ver-estadistica" id="ver-estadistica-tab">Ver
@@ -82,12 +82,14 @@
                         <div class="tab-pane fade show active" id="crear-mensualidad" role="tabpanel"
                             aria-labelledby="ver-estadistica-tab">
                             <div class="row">
+                                <!-- Input Buscar -->
                                 <div class="col-10">
                                     <form class="form">
                                         <input class="form-control" type="search" placeholder="Filtrar"
                                             aria-label="Search">
                                     </form>
                                 </div>
+                                <!-- Botones buscar y + -->
                                 <div class="col-2">
                                     <button class="btn btn-info" type="button" id="btn-filtrar"><i
                                             class="fas fa-search-plus"></i></button>
@@ -149,7 +151,7 @@
                                                                     <article class="col-6">
                                                                         <div class="form-group">
                                                                             <label for="fecha-nac-propietario">Fecha de
-                                                                                nacimiento (*)</label>
+                                                                                nacimeinto (*)</label>
                                                                             <input type="date" class="form-control"
                                                                                 id="fecha-nac-propietario"
                                                                                 placeholder="Fecha de nacimiento del propietario"
@@ -159,7 +161,7 @@
                                                                 </article>
                                                             </div>
                                                         </div>
-
+                                                        <!-- Modal mensualidad -->
                                                         <div class="card mt-4 text-left bg-info text-white">
                                                             <div class="card-header">
                                                                 Datos de inmueble en la mensualidad
@@ -168,46 +170,46 @@
                                                                 <article class="row">
                                                                     <article class="col-6">
                                                                         <div class="form-group">
-                                                                            <label for="metros">Metros cuadrados
-                                                                                (*)</label>
+                                                                            <label for="metros-cuadrados">Metros
+                                                                                Cuadrados (*)</label>
                                                                             <input type="number" class="form-control"
-                                                                                id="metros"
-                                                                                placeholder="Metros cuadrados"
-                                                                                required />
+                                                                                id="metros-cuadrados"
+                                                                                placeholder="Metros Cuadrados" />
                                                                         </div>
                                                                     </article>
                                                                     <article class="col-6">
-                                                                        <div class="form-check">
-                                                                            <h6>Tipo (*)</h6>
-                                                                            <input class="form-check-input" type="radio"
-                                                                                name="exampleRadios" id="exampleRadios1"
-                                                                                value="option1" checked>
-                                                                            <label class="form-check-label"
-                                                                                for="exampleRadios1">
-                                                                                Apartamento
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="form-check">
-                                                                            <input class="form-check-input" type="radio"
-                                                                                name="exampleRadios" id="exampleRadios2"
-                                                                                value="option2">
-                                                                            <label class="form-check-label"
-                                                                                for="exampleRadios2">
-                                                                                Casa
-                                                                            </label>
+                                                                        <div class="form-group">
+                                                                            <label>Tipo (*)</label><br />
+                                                                            <div
+                                                                                class="custom-control custom-radio custom-control-inline">
+                                                                                <input type="radio"
+                                                                                    id="tipo_apartamento"
+                                                                                    name="tipo_inmueble"
+                                                                                    class="custom-control-input"
+                                                                                    value="A">
+                                                                                <label class="custom-control-label"
+                                                                                    for="tipo_apartamento">Apartamento</label>
+                                                                            </div>
+                                                                            <div
+                                                                                class="custom-control custom-radio custom-control-inline">
+                                                                                <input type="radio" id="tipo_casa"
+                                                                                    name="tipo_inmueble"
+                                                                                    class="custom-control-input"
+                                                                                    value="C">
+                                                                                <label class="custom-control-label"
+                                                                                    for="tipo_casa">Casa</label>
+                                                                            </div>
                                                                         </div>
                                                                     </article>
                                                                 </article>
                                                                 <article class="row">
                                                                     <article class="col-6">
                                                                         <div class="form-group">
-                                                                            <label for="num-habitamtes">Numero de
-                                                                                habitantes
-                                                                                (*)</label>
+                                                                            <label for="numero-habitantes">Número de
+                                                                                habitantes (*)</label>
                                                                             <input type="number" class="form-control"
-                                                                                id="num-habitamtes"
-                                                                                placeholder="Numero de habitantes"
-                                                                                required />
+                                                                                id="numero-habitantes"
+                                                                                placeholder="Numero de habitantes" />
                                                                         </div>
                                                                     </article>
                                                                     <article class="col-6">
@@ -215,54 +217,53 @@
                                                                             <label for="fecha-mensualidad">Fecha de
                                                                                 mensualidad (*)</label>
                                                                             <input type="date" class="form-control"
-                                                                                id="fecha-mensualidad"
-                                                                                placeholder="Fecha de mensualidad"
-                                                                                required />
+                                                                                id="fecha-mensualidad" />
                                                                         </div>
                                                                     </article>
                                                                 </article>
                                                             </div>
                                                         </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-success"
-                                                                id="btn-guardar-inmueble">Guardar</button>
-                                                            <button type="button" class="btn btn-primary"
-                                                                data-dismiss="modal">Salir</button>
-                                                            
-                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Salir</button>
+                                                    <button type="button" class="btn btn-primary"
+                                                        id="btn-guardar-inmueble">Guardar</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="table-responsive">
-                                            <table class="table table-bordered" id="tbl-mensualidades">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">Nombre</th>
-                                                        <th scope="col">Edad</th>
-                                                        <th scope="col">Genero</th>
-                                                        <th scope="col">Total a pagar</th>
-                                                        <th scope="col">Fecha de mensualidad</th>
-                                                        <th scope="col">Acciones</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                </tbody>
-                                            </table>
-                                        </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="tbl-mensualidades">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Nombre</th>
+                                                    <th scope="col">Edad</th>
+                                                    <th scope="col">Genero</th>
+                                                    <th scope="col">Total a pagar</th>
+                                                    <th scope="col">Fecha de mensualidad</th>
+                                                    <th scope="col">Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="ver-estadistica" role="tabpanel"
-                                aria-labelledby="ver-estadistica-tab">
+                        </div>
+                        <div class="tab-pane fade" id="ver-estadistica" role="tabpanel"
+                            aria-labelledby="ver-estadistica-tab">
 
-                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
 
         <footer>
